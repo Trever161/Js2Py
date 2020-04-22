@@ -258,7 +258,7 @@ class EvalJs(object):
             else:
                 code = input('>>>')
             try:
-                print(self.eval(code))
+                return(self.eval(code))
             except KeyboardInterrupt:
                 break
             except Exception as e:
